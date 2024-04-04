@@ -1,0 +1,13 @@
+﻿@using WebApplication4.Controllers
+@model List<News>
+
+
+<h1>Список Продуктов</h1>
+
+
+<ul>
+    @foreach (var newsItem in Model)
+    {
+        <li>@newsItem.Title</li>
+    }
+</ul>
